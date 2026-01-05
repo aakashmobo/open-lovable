@@ -1,6 +1,6 @@
 # Open Lovable
 
-Chat with AI to build React apps instantly. An example app made by the [Firecrawl](https://firecrawl.dev/?ref=open-lovable-github) team. For a complete cloud solution, check out [Lovable.dev](https://lovable.dev/) ❤️.
+Chat with AI to build React apps instantly. This example app is configured to use OpenAI (you can swap providers in `.env.local`). For a complete cloud solution, check out [Lovable.dev](https://lovable.dev/) ❤️.
 
 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZtaHFleGRsMTNlaWNydGdianI4NGQ4dHhyZjB0d2VkcjRyeXBucCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZFVLWMa6dVskQX0qu1/giphy.gif" alt="Open Lovable Demo" width="100%"/>
 
@@ -19,7 +19,11 @@ pnpm install  # or npm install / yarn install
 # =================================================================
 # REQUIRED
 # =================================================================
-FIRECRAWL_API_KEY=your_firecrawl_api_key    # https://firecrawl.dev
+# Optional legacy Firecrawl key (not required when using OpenAI)
+# FIRECRAWL_API_KEY=your_firecrawl_api_key    # https://firecrawl.dev
+
+# Primary OpenAI key
+OPENAI_API_KEY=your_openai_api_key        # https://platform.openai.com
 
 # =================================================================
 # AI PROVIDER - Choose your LLM
